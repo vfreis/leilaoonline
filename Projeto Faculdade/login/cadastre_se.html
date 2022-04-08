@@ -9,6 +9,9 @@
 </head>
 <style>
    
+body {
+    background-image: linear-gradient(to right, rgb(20, 147,220), rgb(17, 54, 71));
+}
 
 main {
     width: 940px;
@@ -16,7 +19,10 @@ main {
 }
 
 form {
-    margin: 20px 0;
+    color:white;
+    position: absolute;
+    left:450px;
+    transform: translate()     /*central*/
 }
 
 form label, form p {
@@ -30,6 +36,13 @@ form label, form p {
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+    background: none;                     /*caixa*/
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    width:70%;
+
 }   
 
 .checkbox {
@@ -37,12 +50,25 @@ form label, form p {
 }
 
 .homePage {
+    
     display: flex;
     justify-content:center;
     align-items: center;
     background:#bec5c5 ;
 }
+
+#submit {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 500px;
+    height: 50px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 30px;
+    }
+
 </style>
+
 <body>
     <header>
         <div class="homePage">
@@ -72,11 +98,12 @@ form label, form p {
                 Telefone</label>
             
             <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
-            
+    
         </div>    
             <label class="checkbox"><input type="checkbox" checked>Gostaria  de receber nossas novidades por email?</label>
 
-            <input type="submit" value="Enviar formulário">
+
+            <input type="submit" value="Enviar formulário" id="submit">
 
         </form>
     </main>

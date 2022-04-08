@@ -27,6 +27,7 @@ body{
     flex-direction:column;
     color: rgb(0, 0, 0);
     padding: 2em;
+    margin-top: 30px;
 }
 
 .heading {
@@ -71,7 +72,7 @@ body{
     content: '';
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60px;
     transform: translate(-50%, -50%);
     width: 102%;
     height: 105%;
@@ -107,5 +108,3 @@ body{
 .text a {
     color: rgba(0, 0, 0, 0.911);
 }
-
-
