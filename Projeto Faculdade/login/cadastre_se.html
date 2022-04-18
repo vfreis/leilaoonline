@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<style>
+   
+body {
+    background-image: linear-gradient(to right, rgb(20, 147,220), rgb(17, 54, 71));
+}
+
+main {
+    width: 940px;
+    margin: 50px; 
+}
+
+form {
+    color:white;
+    position: absolute;
+    left:400px;
+    transform: translate()     /*central*/
+}
+
+form label, form p {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    background: none;                     /*caixa*/
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    width:70%;
+    border-radius: 40px; 
+
+}   
+
+.checkbox {
+    margin: 20px 0 ;
+}
+
+.homePage {
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:#bec5c5 ;
+}
+
+#submit {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 500px;
+    height: 50px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 30px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="homePage">
+            <h1><img src="imagens/logo3.png" alt="Logo do Lance Mania"></h1>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nomesobrenome">Digite seu Nome Completo:</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+    
+            <label for="email">Digite seu Email:</label>
+            <input type="email" id="email" class="input-padrao" placeholder="Digite seu email" required>
+            
+    
+            <label for="telefone">Digite seu Telefone:</label>
+            <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required>
+            
+            <label for="Mensagem">Mensagem:</label>
+            <textarea  cols="68" rows="10" id="mensagem" class="input-padrao"></textarea>
+        <div>
+            <p>Como prefere o nosso contato?</p>
+            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+            
+
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
+                Telefone</label>
+            
+            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+    
+        </div>    
+            <label class="checkbox"><input type="checkbox" checked>Gostaria  de receber nossas novidades por email?</label>
+
+
+            <input type="submit" value="Enviar formulário" id="submit">
+
+        </form>
+    </main>
+</body>
+</html>
