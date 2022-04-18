@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="cadastro.css">
 </head>
 <style>
-   
-body {
-    background-image: linear-gradient(to right, rgb(20, 147,220), rgb(17, 54, 71));
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#ecf3e6;
+    
 }
 
 main {
@@ -19,30 +21,25 @@ main {
 }
 
 form {
-    color:white;
-    position: absolute;
-    left:450px;
-    transform: translate()     /*central*/
+    margin: 20px 0;
 }
 
 form label, form p {
     display:block;
     font-size: 20px;
     margin: 0 0 10px;
+    
 }
+
+
+
+
 
 .input-padrao {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
-    background: none;                     /*caixa*/
-    border-bottom: 1px solid white;
-    outline: none;
-    font-size: 15px;
-    color: white;
-    width:70%;
-
 }   
 
 .checkbox {
@@ -50,29 +47,39 @@ form label, form p {
 }
 
 .homePage {
-    
     display: flex;
     justify-content:center;
     align-items: center;
     background:#bec5c5 ;
 }
 
-#submit {
-    text-align: center;
-    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
-    width: 500px;
-    height: 50px;
-    font-weight: bolder;
-    color: white;
-    border-radius: 30px;
-    }
+.enviar {
+    width: 40%;
+    padding: 10px 0;
+    background: rgb(146, 183, 233);
+    font-size: 15px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgb(17, 104, 218);
+}
+
+.homePage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 </style>
 
+
 <body>
+
     <header>
         <div class="homePage">
-            <h1><img src="imagens/logo3.png" alt="Logo do Lance Mania"></h1>
         </div>
     </header>
     <main>
@@ -98,14 +105,15 @@ form label, form p {
                 Telefone</label>
             
             <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
-    
+            
         </div>    
             <label class="checkbox"><input type="checkbox" checked>Gostaria  de receber nossas novidades por email?</label>
-
-
-            <input type="submit" value="Enviar formulário" id="submit">
+        
+            <input type="submit" value="Enviar formulário" class="enviar">
 
         </form>
     </main>
+
+    
 </body>
 </html>
