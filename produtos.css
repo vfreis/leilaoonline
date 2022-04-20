@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(to right,#a5fecb,#20bdff,#5433ff);
+}
+
+.main{
+    height: 90vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: cener;
+    align-items: center;
+}
+
+.box{
+    margin: 40px;
+    
+}
+
+.box div{
+    width: 170px;
+    height: 230px;
+
+}
+
+.box div img{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 15px;
+    
+}
+
+
+
+.box p{
+    position: relative;
+    left: 80%;
+    font-family: cursive;
+    font-size: 20px;
+    transform: translate(-50%, 0px);
+    
+    
+}
+
+
+    

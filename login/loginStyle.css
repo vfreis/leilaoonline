@@ -18,7 +18,7 @@ body{
 
 
 .container {
-    background: rgb(157, 194, 206);
+    background: rgb(188, 227, 240);
     width: 350px;
     height: 450px;
     border-radius: 20px;
@@ -107,4 +107,3 @@ body{
 .text a {
     color: rgba(0, 0, 0, 0.911);
 }
-
