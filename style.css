@@ -22,6 +22,7 @@
 #topMenu li:first-child {
     margin-right: auto;
 }
+
 body {
     background-color:#ecf3e6;
 }
@@ -40,12 +41,12 @@ button {
     line-height: normal;
     padding: 11px 24px;
     transition: background box-shadow 280ms ease;
-   }
+}
    
 button:hover {
     background: #F6F9FE;
     color: #194997;
-   }
+}
    
 button:active {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
