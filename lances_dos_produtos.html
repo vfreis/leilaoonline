@@ -30,7 +30,8 @@ function enviaMsg() {
   var data = {
   "nome":document.getElementById("nome").value,
   "valor":document.getElementById("valor").value,
-  "dia":document.getElementById("dia").value};
+  "dia":document.getElementById("dia").value,
+  "produto_id":document.getElementById("produto_id").value};
   var jsondata = JSON.stringify(data);
   var url = "https://jovbr2eyq4.execute-api.us-east-1.amazonaws.com/get_post";
   xhttp.open("POST", url);
@@ -51,6 +52,9 @@ function imprimeResposta(xml) {
 	<td><LABEL for="nome">Usuario:</LABEL>
 	<td><INPUT Type = "Text" id="nome" Name="nome" Size="20" MaxLength="50"><BR></INPUT>
 	<tr>
+  <td><LABEL for="text">Produto:</LABEL>
+  <td><INPUT Type = "Text" id="produto_id" Name="produto_id" Size="20" MaxLength="50"><BR></INPUT>
+  <tr>  
 	<td><LABEL for="valor">Lance:</LABEL>
 	<td><INPUT Type = "Text" id="valor" Name="valor" Size="20" MaxLength="50"><BR></INPUT>
   <tr>
