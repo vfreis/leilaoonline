@@ -3,10 +3,9 @@ body{
 }
 
 .main{
-    height: 90vh;
-    display: flex;
+    height: 140vh;
+    display:flex;
     flex-flow: row wrap;
-    justify-content: cener;
     align-items: center;
 }
 
@@ -17,14 +16,14 @@ body{
 
 .box div{
     width: 170px;
-    height: 230px;
+    height: 240px;
 
 }
 
 .box div img{
-    width: 100%;
-    height: 100%;
-    margin: 10px;
+    width: 90%;
+    height: 90%;
+    margin: px;
     border-radius: 15px;
     
 }
@@ -32,7 +31,7 @@ body{
 
 
 .box p{
-    position: relative;
+    position:relative;
     left: 80%;
     font-family: cursive;
     font-size: 20px;
@@ -53,7 +52,7 @@ button {
     font-family: inherit;
     letter-spacing: .25px;
     line-height: normal;
-    padding: 11px 24px;
+    padding: 10px 55px;
     transition: background box-shadow 280ms ease;
 }
    
