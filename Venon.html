@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+
+function enviaMsg() {
+  const xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function() {
+    console.log("readyState:" + this.readyState);
+	console.log("status:" + this.status);
+
+    if (this.readyState == 4 && this.status == 200) {
+      imprimeResposta(this);
+    }
+  };
+
+  xhttp.onload = function() {
+    document.getElementById("resposta").innerHTML = this.responseText;
+  };
+
+  document.getElementById("saida").innerHTML = "mensagem enviada";
+  var data = {
+  "nome":document.getElementById("nome").value,
+  "valor":document.getElementById("valor").value};
+  var jsondata = JSON.stringify(data);
+  var url = "https://jovbr2eyq4.execute-api.us-east-1.amazonaws.com/get_post";
+  xhttp.open("POST", url);
+  xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  xhttp.send(jsondata);
+}
+
+function imprimeResposta(xml) {
+  var xmlDoc = xml.responseXML;
+  document.getElementById("resposta").innerHTML = xmlDoc;
+}
+</script>
+
+<style>
+ img {
+ border-radius: 15px;
+ height:320px;
+  
+}
+ 
+ 
+body{
+  background: linear-gradient(to right,#a5fecb,#20bdff,#5433ff);
+     
+       
+} 
+
+button {
+    background-color: #53caee;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    letter-spacing: .25px;
+    line-height: normal;
+    padding: 10px 100px;
+    transition: background box-shadow 280ms ease;
+    
+}
+   
+button:hover {
+    background: #F6F9FE;
+    color: #194997;
+    
+}
+   
+button:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+    border: 2px solid #4285f4;
+}
+</style>
+
+
+<h1 id="saida">Pressione enviar para validar seu lance</h1>
+<img src="ProdutosIMG/venon.jpg" alt="Boneco Venon">
+<br><br>
+<table>
+	<tr>
+	<td><LABEL for="nome">Usuario:</LABEL>
+	<td><INPUT Type = "Text" id="nome" Name="nome" Size="20" MaxLength="50"><BR></INPUT>
+	<tr>
+  <tr>  
+	<td><LABEL for="valor">Lance:</LABEL>
+	<td><INPUT Type = "Text" id="valor" Name="valor" Size="20" MaxLength="50"><BR></INPUT>
+  <tr>
+  <br>   
+</table>
+<button type="button" onclick="enviaMsg()">Enviar</button>
+
+<br><br><br>
+Resposta:
+<br>
+<span id="resposta">---------</span>
+
+</body>
+</html>

@@ -9,41 +9,6 @@
     <link rel="stylesheet" href="produtos.css">
 </head>
 <body>
-    <script>
-
-        function enviaMsg() {
-          const xhttp = new XMLHttpRequest();
-        
-          xhttp.onreadystatechange = function() {
-            console.log("readyState:" + this.readyState);
-            console.log("status:" + this.status);
-        
-            if (this.readyState == 4 && this.status == 200) {
-              imprimeResposta(this);
-            }
-          };
-        
-          xhttp.onload = function() {
-            document.getElementById("resposta").innerHTML = this.responseText;
-          };
-        
-          document.getElementById("saida").innerHTML = "mensagem enviada";
-          var data = {
-          "nome":document.getElementById("nome").value,
-          "valor":document.getElementById("valor").value};
-          var jsondata = JSON.stringify(data);
-          var url = "https://jovbr2eyq4.execute-api.us-east-1.amazonaws.com/get_post";
-          xhttp.open("POST", url);
-          xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-          xhttp.send(jsondata);
-        }
-        
-        function imprimeResposta(xml) {
-          var xmlDoc = xml.responseXML;
-          document.getElementById("resposta").innerHTML = xmlDoc;
-        }
-    </script>
- 
 <header>
           
         <ul id="topMenu">
@@ -59,25 +24,10 @@
             <div>
                 <h4 id="saida"></h4>
                 <p>Venon</p>
+                <a href="Venon.html">
                 <img src="ProdutosIMG/venon.jpg" alt="Boneco Venon">
-                <table>
-                    <tr>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                <tr></tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>
-                  <br>   
-                    
-                </table>
-                
-                <button type="button" onclick="enviaMsg()">Enviar</button>
-                
-                <br><br><br>
-                Resposta:
-                <br>
-                <span id="resposta">---------</span>
+                </a>
+               
                
             </div>
         </div>
@@ -85,160 +35,60 @@
             <div> 
                 <h3 id="saida"></h3>
                 <p>Sasuke</p>
-                <img src="ProdutosIMG/Anime, Manga e Cultura Japonesa em Portugal _ ptAnime.png" alt="Boneco do Sasuke">
-                <table>
-                    <tr>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                <tr></tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>
-                  <br>   
-                    
-                </table>
+                <a href="Sasuke.html">
+
+                    <img src="ProdutosIMG/Anime, Manga e Cultura Japonesa em Portugal _ ptAnime.png" alt="Boneco do Sasuke">
+                </a>
                 
-                <button type="button" onclick="enviaMsg()">Enviar</button>
-                
-                <br><br><br>
-                Resposta:
-                <br>
-                <span id="resposta">---------</span>
-                
-            </div>
-        </div>
-        
-        <div class="box">
-            <div> 
-                <p>Deidara</p>
-                <img src="ProdutosIMG/Q foda eu quero uma.jpg" alt="Boneco do Deidara">
-                <table>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                    <tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>  
-                </table>
-                
-                <button type="button" onclick="enviaMsg()">Enviar</button>
-            </div>
-        </div>
-        <div class="box">
-            <div> 
-                <p>Kisame</p>
-                <img src="ProdutosIMG/53d9411e-784f-46c0-8c9c-d84252507939.jpg" alt="Boneco do Kisame">
-                <table>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                    <tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>  
-                </table>
-                
-                <button type="button" onclick="enviaMsg()">Enviar</button>
             </div>
         </div>
         <div class="box">
             <div> 
                 <p>Goku</p>
+                <a href="Goku.html">
+
                 <img src="ProdutosIMG/Dragon Ball - Son Goku Super Sayian 1.jpg" alt="Boneco do Goku">
-                <table>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                    <tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>  
-                </table>
+                </a>
                 
-                <button type="button" onclick="enviaMsg()">Enviar</button>
             </div>
         </div>
-        
-        <div class="box">
-            <div> 
-                <p>Vegeta</p>
-                <img src="ProdutosIMG/Vegeta Gravity Training Room Anime Figures For Sale, Dragon Ball Figures 1_6 & 1_4 Scale With LED, 129097 _ 4UGK.png" alt="Boneco do Kuruma">
-                <table>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                    <tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>  
-                </table>
-                
-                <button type="button" onclick="enviaMsg()">Enviar</button>
-            </div>
-        </div>
-        
         <div class="box">
             <div> 
                 <p>Hulk</p>
-                <img src="ProdutosIMG/hullk.jpg" alt=""><table>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                    <tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>  
-                </table>
-                
-                <button type="button" onclick="enviaMsg()">Enviar</button>
+                <a href="Hulk.html">
+
+                <img src="ProdutosIMG/hullk.jpg" alt="Boneco Hulk">
+                </a>
             </div>
-        </div>
-    
+        </div>   
         <div class="box">
             <div> 
                 <p>Homem-Aranha</p>
-                <img src="ProdutosIMG/home_aranha.jpg" alt="">
-                <table>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                    <tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>  
-                </table>
+                <a href="Homem.html">
+
+                <img src="ProdutosIMG/home_aranha.jpg" alt="Boneco Homem Aranha">
+                </a>
                 
-                <button type="button" onclick="enviaMsg()">Enviar</button>
             </div>
         </div>
         <div class="box">
             <div> 
                 <p>Batman</p>
-                <img src="ProdutosIMG/batam.jpg" alt="">
-                <table>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                    <tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>  
-                </table>
+                <a href="Batman.html">
+                <img src="ProdutosIMG/batam.jpg" alt="Boneco Batman">
+                </a>
                 
-                <button type="button" onclick="enviaMsg()">Enviar</button>
             </div>
         </div>
         <div class="box">
             <div> 
                 <p>Predador</p>
-                <img src="ProdutosIMG/vigador.jpg" alt="">
-                <table>
-                    <td><LABEL for="nome">Usuario:</LABEL>
-                    <td><INPUT Type = "Text" id="nome" Name="nome" Size="7" MaxLength="50"><BR></INPUT>
-                    <tr> 
-                    <td><LABEL for="valor">Lance:</LABEL>
-                    <td><INPUT Type = "Text" id="valor" Name="valor" Size="7" MaxLength="50"><BR></INPUT>
-                  <tr>  
-                </table>
+                <a href="Predador.html">
+
+                <img src="ProdutosIMG/vigador.jpg" alt="Boneco Predador">
+                </a>
                 
-                <button type="button" onclick="enviaMsg()">Enviar</button>
             </div>
         </div>
-
-        <script src="script.js"></script>
 </body>
 </html>
