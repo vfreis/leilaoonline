@@ -26,7 +26,7 @@ function enviaMsg() {
     document.getElementById("resposta").innerHTML = this.responseText;
   };
 
-  document.getElementById("saida").innerHTML = "mensagem enviada";
+  document.getElementById("saida").innerHTML = "Seu lance foi enviado com sucesso, Boa Sorte!";
   var data = {
   "nome":document.getElementById("nome").value,
   "valor":document.getElementById("valor").value};
@@ -85,29 +85,38 @@ button:active {
     outline: none;
     border: 2px solid #4285f4;
 }
+h1{
+  margin: 5% 0% 0% 32%;
+}
+header{
+  margin: 1% 0% 0% 40%;
+}
 </style>
 
 
 <h1 id="saida">Pressione enviar para validar seu lance</h1>
-<img src="ProdutosIMG/batam.jpg" alt="Boneco Batman">
-<br><br>
-<table>
-	<tr>
-	<td><LABEL for="nome">Usuario:</LABEL>
-	<td><INPUT Type = "Text" id="nome" Name="nome" Size="20" MaxLength="50"><BR></INPUT>
-	<tr>
-  <tr>  
-	<td><LABEL for="valor">Lance:</LABEL>
-	<td><INPUT Type = "Text" id="valor" Name="valor" Size="20" MaxLength="50"><BR></INPUT>
-  <tr>
-  <br>   
-</table>
-<button type="button" onclick="enviaMsg()">Enviar</button>
+<header>
 
-<br><br><br>
-Resposta:
-<br>
-<span id="resposta">---------</span>
+  <img src="ProdutosIMG/batam.jpg" alt="Boneco Batman">
+  <br><br>
+  <table>
+    <tr>
+    <td><LABEL for="nome">Usuario:</LABEL>
+    <td><INPUT Type = "Text" id="nome" Name="nome" Size="20" MaxLength="50"><BR></INPUT>
+    <tr>
+    <tr>  
+    <td><LABEL for="valor">Lance:</LABEL>
+    <td><INPUT Type = "Text" id="valor" Name="valor" Size="20" MaxLength="50"><BR></INPUT>
+    <tr>
+    <br>   
+  </table>
+  <button type="button" onclick="enviaMsg()">Enviar</button>
+  
+  <br><br><br>
+  Resposta:
+  <br>
+  <span id="resposta">---------</span>
+</header>
 
 </body>
 </html>
