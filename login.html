@@ -23,12 +23,19 @@
                 <div class="box">
                     <p>Login</p>
                     <div>
-                        <input type="name" name="" id="" placeholder="Digite seu Login" required>
+                        <input type="text name" name="" id="user" placeholder="Username" required>
+                        <label for="user">Autenticação</label>
+
+                         <!-- autentificando usuário -->
+
+                    <button type="button" onclick="setUser()" id="verificar">Verificar Autenticação</button>
+                    <script src="../leilaoonline-main/loginCookie.js"></script>
+
                     </div>
                 </div>
             <div class="box">
             </div> 
-            <button class="btn">Entrar</button>
+            <button id="entrarProdutos" class="btn"><a href="produtos.html">Entrar</a></button>
             <br>
             <p class="text">Não tem uma conta? <a href="cadastre_se.html"> Cadastre-se aqui</a></p>
             </div> 

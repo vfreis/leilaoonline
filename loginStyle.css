@@ -167,3 +167,23 @@ button:active {
     margin-right: auto;
 }
 
+
+#verificar{
+    display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: nowrap;
+   margin-top: 2rem;
+}
+
+#entrarProdutos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
