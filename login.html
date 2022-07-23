@@ -6,40 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <header>
-          
-        <ul id="topMenu">
-            <li> <button> <a href="index.html">Home</a></li></button>
-            <li> <button> <a href="contatos.html">Contatos</a></li></button>
-            <li><button> <a href="produtos.html">Produtos</a></li></button>
-            <li> <button><a href="login.html">Login</a></li></button>
-        </ul>        
-    </header>
-           <form>
-            <div class="container">
-                <p class="heading">Conecte-se</p>
-                <div class="box">
+    <nav class="navbar  navbar-expand-lg   shadow p-3 mb-5">
+        <h1  class="navbar-brand" href="">Lance Mania</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="link-warning nav-link fas fa-home icon" href="index.html" >Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="link-warning nav-link" href="contatos.html">Contatos</a>
+            </li>
+            <li class="nav-item">
+                <a class="link-warning nav-link" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a class="link-warning nav-link" href="login.html">Login</a>
+            </li>
+            
+        </ul>
+     </div>
+    </nav>
+           <form >
+            <div  class="position-absolute top-50 start-50 translate-middle">
+                <p class="text-center">Conecte-se</p>
                     <p>Login</p>
-                    <div>
-                        <input type="text name" name="" id="user" placeholder="Username" required>
-                        <label for="user">Autenticação</label>
+                   
+                        <input  type="text name" name="" id="user" placeholder="Username" required>
+                        <label  for="user">Autenticação</label>
 
                          <!-- autentificando usuário -->
 
-                    <button type="button" onclick="setUser()" id="verificar">Verificar Autenticação</button>
+                    <button class="btn  mb-3" type="button" onclick="setUser()" id="verificar">Verificar Autenticação</button>
                     <script src="../leilaoonline-main/loginCookie.js"></script>
-
-                    </div>
-                </div>
-            <div class="box">
-            </div> 
-            <button id="entrarProdutos" class="btn"><a href="produtos.html">Entrar</a></button>
+          
+            <button><a href="produtos.html">Entrar</a></button>
             <br>
-            <p class="text">Não tem uma conta? <a href="cadastre_se.html"> Cadastre-se aqui</a></p>
+            <p >Não tem uma conta? <a href="cadastre_se.html"> Cadastre-se aqui</a></p>
             </div> 
-    
+            <div class="position-relative"></div>
+            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <h1> <img src="imagens/logo3.png" alt="lance"> </h1> </div>
+        </div>
            </form>
  
     

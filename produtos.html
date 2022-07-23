@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="produtos.css">
 </head>
 <body>
-    <nav class="navbar  navbar-expand-lg ">
+    <nav class="navbar  navbar-expand-lg shadow p-3 mb-5 ">
         <h1  class="navbar-brand" href="">Lance Mania</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,12 +35,178 @@
         </ul>
      </div>
     </nav>
-    <div>
-<h1 class="titulo">Para efetuar seu lance, clique sobre o produto desejado!</h1>
- 
+    
+<h1 class="text-center" >Para efetuar seu lance, clique sobre o produto desejado!</h1>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card " >
+            <div class="card-header">
+                <h4 class="text-center">Sasuke</h4>
+            </div>
+                <div class="card-body ">
+                    <a href="Sasuke.html">
+                        <img class="rounded mx-auto d-block" style="border-radius: 20px;
+                        height:450px;" src="ProdutosIMG/Anime, Manga e Cultura Japonesa em Portugal _ ptAnime.png" alt="Figure Action do Sasuke">
+                    </a>
+                    <table>
+                        <tr>
+                        <td><LABEL for="nome">Usuario:</LABEL>
+                        <td><INPUT Type = "Text" id="nome" Name="nome" Size="20" MaxLength="50"><BR></INPUT>
+                        <tr>
+                        <tr>  
+                        <td><LABEL for="valor">Lance:</LABEL>
+                        <td><INPUT Type = "Text" id="valor" Name="valor" Size="20" MaxLength="50"><BR></INPUT>
+                        <tr>
+                        <br>   
+                      </table>
+                      <button type="button" onclick="enviaMsg()">Enviar</button>
+                      
+                      <br><br><br>
+                      Resposta:
+                      <br>
+                      <span id="resposta">---------</span>
+                </div>
+                   
+        </div>
+
+    </div>
+
+    
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <div class="card-header">
+                <h4 class="text-center">Venom</h4>
+            </div>
+                <div class="card-body">
+                    <a href="Venon.html">
+                        <img class="rounded mx-auto d-block" style="border-radius: 20px;
+                        height:450px;" src="ProdutosIMG/venon.jpg" alt="Figure Action Venom">
+                        </a>
+                    <table  >
+                        <tr>
+                        <td><LABEL for="nome">Usuario:</LABEL>
+                        <td><INPUT Type = "Text" id="nome" Name="nome" Size="20" MaxLength="50"><BR></INPUT>
+                        <tr>
+                        <tr>  
+                        <td><LABEL for="valor">Lance:</LABEL>
+                        <td><INPUT Type = "Text" id="valor" Name="valor" Size="20" MaxLength="50"><BR></INPUT>
+                        <tr>
+                        <br>   
+                    </table>
+                    <button type="button" onclick="enviaMsg()">Enviar</button>
+                      
+                      <br><br><br>
+                      Resposta:
+                      <br>
+                      <span id="resposta">---------</span>
+                </div>            
+        </div>
+    
+
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <div class="card-header">
+                <h4 class="text-center">Goku</h4>
+                
+            </div>
+                <div class="card-body">
+                    
+                    <img  class="rounded mx-auto d-block" style="border-radius: 20px;
+                    height:450px;" src="ProdutosIMG/Dragon Ball - Son Goku Super Sayian 1.jpg" alt="Figure Action  do Goku">
+                    <table>
+                        <tr>
+                        <td><LABEL for="nome">Usuario:</LABEL>
+                        <td><INPUT Type = "Text" id="nome" Name="nome" Size="20" MaxLength="50"><BR></INPUT>
+                        <tr>
+                        <tr>  
+                        <td><LABEL for="valor">Lance:</LABEL>
+                        <td><INPUT Type = "Text" id="valor" Name="valor" Size="20" MaxLength="50"><BR></INPUT>
+                        <tr>
+                        <br>   
+                      </table>
+                      <button type="button" onclick="enviaMsg()">Enviar</button>
+                      
+                      <br><br><br>
+                      Resposta:
+                      <br>
+                      <span id="resposta">---------</span>
+                </a>
+                </div>            
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <div class="card-header">
+                <h4 class="text-center"> Homem-Aranha</h4>
+            </div>
+                <div class="card-body">
+                    <img class="rounded mx-auto d-block" style="border-radius: 20px;
+                    height:450px;" src="ProdutosIMG/home_aranha.jpg" alt="Figure Action  Homem Aranha">
+                     <table>
+                        <tr>
+                        <td><LABEL for="nome">Usuario:</LABEL>
+                        <td><INPUT Type = "Text" id="nome" Name="nome" Size="20" MaxLength="50"><BR></INPUT>
+                        <tr>
+                        <tr>  
+                        <td><LABEL for="valor">Lance:</LABEL>
+                        <td><INPUT Type = "Text" id="valor" Name="valor" Size="20" MaxLength="50"><BR></INPUT>
+                        <tr>
+                        <br>   
+                      </table>
+                      <button type="button" onclick="enviaMsg()">Enviar</button>
+                      
+                      <br><br><br>
+                      Resposta:
+                      <br>
+                      <span id="resposta">---------</span>
+                </div>            
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <div class="card-header">
+        
+            </div>
+                <div class="card-body">
+        
+                </div>            
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <div class="card-header">
+        
+            </div>
+                <div class="card-body">
+        
+                </div>            
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <div class="card" >
+            <div class="card-header">
+        
+            </div>
+                <div class="card-body">
+        
+                </div>            
+        </div>
+    </div>
+
+
+    
+</div>
+
+
+
+
+
     <div class="main">
         <div class="box">
-            <div>
+            <div >
                 <h4 id="saida"></h4>
                 <p>Venom</p>
                 <a href="Venon.html">
@@ -62,7 +228,7 @@
             </div>
         </div>
         <div class="box">
-            <div> 
+            <div > 
                 <p>Goku</p>
                 <a href="Goku.html">
 
@@ -109,5 +275,11 @@
                 
             </div>
         </div>
+        <!--
+
+            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <h1> <img src="imagens/logo3.png" alt="lance"> </h1> </div>
+        </div>
+        -->
 </body>
 </html>
