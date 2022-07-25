@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <title>Cadastro</title>
 </head>
 
@@ -114,35 +117,54 @@
     
     </style>
 <body>
-    <header>
-          
-        <ul id="topMenu">
-            <li> <button> <a href="index.html">Home</a></li></button>
-            <li> <button> <a href="contatos.html">Contatos</a></li></button>
-            <li><button> <a href="produtos.html">Produtos</a></li></button>
-            <li> <button><a href="login.html">Login</a></li></button>
+    <nav class="navbar  navbar-expand-lg   shadow p-3 mb-5">
+        <h1  class="navbar-brand" href="">Lance Mania</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class=" nav-link fas fa-home icon" href="index.html" >Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contatos.html">Contatos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a class=" nav-link" href="login.html">Login</a>
+            </li>
             
         </ul>
-    </header>
+     </div>
+    </nav>
     <main>
-        <form>
+        <form action="produtos.html" method="get">
             <label for="nomesobrenome">Digite seu Nome Completo:</label>
             <input type="text" id="nomesobrenome" class="input-padrao" placeholder="Digite seu nome" required>
     
             <label for="email">Digite seu Email:</label>
             <input type="email" id="email" class="input-padrao" placeholder="Digite seu email" required>
-            
-    
         
-            
-            
            
-            <label class="checkbox"><input type="checkbox" checked>Gostaria  de receber nossas novidades por email?</label>
+            <label  class="checkbox"><input type="checkbox" checked>Gostaria  de receber nossas novidades por email?</label>
 
-            <button class="btn">Entrar</button>
+                <button  class="btn">Entrar</button>
+           
             <!-- <input type="submit" value="Enviar formulário" id="submit"> -->
 
         </form>
+        <form action=""></form>
     </main>
+    <footer>
+        <div class="postion-relative">
+            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <img src="imagens/logo3.png" alt="lance">
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>
